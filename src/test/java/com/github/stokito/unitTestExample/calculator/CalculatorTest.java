@@ -52,4 +52,10 @@ public class CalculatorTest {
 		Calculator calculator = new Calculator();
 		Assert.assertEquals(0.125, calculator.power(2, -3));
 	}
+	
+	@Test
+	public void testPowerNegativeBase() {
+		Calculator calculator = new Calculator();
+		Assert.assertEquals(-1.0, calculator.power(-1, 5));
+	}
 }
