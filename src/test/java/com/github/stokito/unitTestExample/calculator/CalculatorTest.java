@@ -40,4 +40,10 @@ public class CalculatorTest {
 		Calculator calculator = new Calculator();
 		Assert.assertEquals(64.0,  calculator.power(4,3));
 	}
+	
+	@Test
+	public void testPowerExponentZero() {
+		Calculator calculator = new Calculator();
+		Assert.assertEquals(1.0, calculator.power(5, 0));
+	}
 }
