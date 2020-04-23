@@ -46,4 +46,10 @@ public class CalculatorTest {
 		Calculator calculator = new Calculator();
 		Assert.assertEquals(1.0, calculator.power(5, 0));
 	}
+	
+	@Test
+	public void testPowerNegativeExponent() {
+		Calculator calculator = new Calculator();
+		Assert.assertEquals(0.125, calculator.power(2, -3));
+	}
 }
